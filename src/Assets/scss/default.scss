@@ -1,0 +1,165 @@
+@import "_config.scss";
+
+.basicBtn{
+    color:$white;
+    background: $black;
+    z-index: 999;
+    border:2px solid $black;
+    font-size:20px;
+    font-weight: bold;
+    @include xxxl-width{
+            
+      padding:15px 60px;
+  }
+    @include xxl-width{
+        
+      padding:15px 60px;
+    }
+
+    @include xl-width{
+      padding:15px 60px;
+    }
+    @include lg-width{
+      padding:15px 40px;
+    }
+     @include md-width{
+      padding:15px 40px;
+            }
+    @include sm-width{
+      padding:15px 20px; 
+    }
+    @include xs-width{
+      padding:15px 20px; 
+  } 
+    @include transition(.2s ease);
+    &:hover{
+       color:$white;
+       background: $black;
+       color:$black;
+       background: $white;
+       @include md-width{
+        background: rgba(0, 0, 0, 0);
+        color:$white;
+              }
+              @include sm-width{
+                background: rgba(0, 0, 0, 0);
+                color:$white;
+              }
+              @include xs-width{
+                background: rgba(0, 0, 0, 0);
+                color:$white;
+            } 
+      //  border:2px solid $black;
+    }
+}
+.basicBtn_reverse{
+  color:$black;
+  background: $white;
+  z-index: 999;
+  border:2px solid $black;
+  font-size:20px;
+  font-weight: bold;
+  @include xxxl-width{
+            
+    padding:15px 60px;
+}
+  @include xxl-width{
+      
+    padding:15px 60px;
+  }
+
+  @include xl-width{
+    padding:15px 60px;
+  }
+  @include lg-width{
+    padding:15px 40px;
+  }
+  @include md-width{
+    padding:15px 40px;
+    border:2px solid $white;
+  }
+  @include sm-width{
+    padding:15px 20px;
+    border:2px solid $white;
+  }
+  @include xs-width{
+    padding:15px 20px; 
+    border:2px solid $white;
+} 
+  @include transition(.2s ease);
+    &:hover{
+      color:$black;
+      background: $white;
+      color:$white;
+      background: $black;
+      @include md-width{
+        background: rgba(255, 255, 255, 0);
+        border:2px solid $white;
+              }
+              @include sm-width{
+                background: rgba(255, 255, 255, 0);
+                border:2px solid $white;
+                      }   
+                      @include xs-width{
+                        background: rgba(255, 255, 255, 0);
+                        border:2px solid $white;
+                    } 
+    }
+}
+
+
+$offset: 187;
+$duration: 1.4s;
+
+.spinner {
+  animation: rotator $duration linear infinite;
+}
+
+@keyframes rotator {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(270deg); }
+}
+
+.path {
+  stroke-dasharray: $offset;
+  stroke-dashoffset: 0;
+  transform-origin: center;
+  animation:
+    dash $duration ease-in-out infinite, 
+    colors ($duration*4) ease-in-out infinite;
+}
+
+@keyframes colors {
+	0% { stroke: #4285F4; }
+	25% { stroke: #DE3E35; }
+	50% { stroke: #F7C223; }
+	75% { stroke: #1B9A59; }
+  100% { stroke: #4285F4; }
+}
+
+@keyframes dash {
+ 0% { stroke-dashoffset: $offset; }
+ 50% {
+   stroke-dashoffset: $offset/4;
+   transform:rotate(135deg);
+ }
+ 100% {
+   stroke-dashoffset: $offset;
+   transform:rotate(450deg);
+ }
+}
+.loading{
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.notFound{
+  height:calc(100vh - 200px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
