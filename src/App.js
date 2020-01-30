@@ -38,7 +38,7 @@ class App extends Component {
             <title>Wesley Portfolio</title>
             <meta name="description" content="Wesley Portfolio" />
             <meta property="og:title" content="Wesley Portfolio" />
-            <meta property="og:image" content="landing.png" />
+            <meta property="og:image" content="./landing.png" />
          </MetaTags>
           <Switch>
             <Route exact path="/" render={(props) => <Landingpage {...props} title="Portfolio"/>}/>
