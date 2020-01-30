@@ -35,9 +35,9 @@ class App extends Component {
       <Router>
          <div className="App">
          <MetaTags>
-            <title>Portfolio</title>
+            <title>Wesley Portfolio</title>
             <meta name="description" content="Wesley Portfolio" />
-            <meta property="og:title" content="Portfolio" />
+            <meta property="og:title" content="Wesley Portfolio" />
             <meta property="og:image" content="landing.png" />
          </MetaTags>
           <Switch>
