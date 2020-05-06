@@ -141,7 +141,7 @@
         font-family: 'Ibarra Real Nova', serif;
         display: flex;
         flex-direction: row;
-       
+        overflow: hidden;
         @include xxxl-width{
             
             width:1100px;

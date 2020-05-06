@@ -565,7 +565,9 @@ a {
   .header .header-right {
     font-family: 'Ibarra Real Nova', serif;
     display: flex;
-    flex-direction: row; }
+    flex-direction: row; 
+    overflow: hidden;
+  }
     @media all and (min-width: 1680px) {
       .header .header-right {
         width: 1100px; } }
