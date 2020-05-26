@@ -21,7 +21,7 @@ class Professional extends Component {
           <h1 data-aos="fade-in">Professional Project</h1>
           <div className="professional-section">
             <ProfessionalPart title="Water Treatment 
-  Management Dashboard" position="Front-End Developer Intern" company="Advantech" location="Taipei, Taiwan" date="July 2019 - Aug 2019" image={advantech} url="" first="Developed user-friendly panels with platform Grafana to visualize data using 
+  Management Dashboard" position="Front-End Developer Intern" company="Advantech" location="Taipei, Taiwan" date="July 2019 - Aug 2019" image={advantech} url="https://dashboard-showcase-eks002.hz.wise-paas.com.cn/frame/Water%20Treatment%20Management?language=en&theme=dark&orgId=2" first="Developed user-friendly panels with platform Grafana to visualize data using 
   AngularJS and SVG.js" second="Cooperated with front-end team to Improved visualizing time-series data for 
   infrastructure and application analytics"/>
             <ProfessionalPart title="Bosswell &amp; HsuanFu Wood" company="Creatop" position="Front-End Developer Intern" location="Taichung, Taiwan" date="June 2019 - July 2018" image={creatop} url="http://www.hsuanfu.com.tw/en/" first="Redesigned and developped one page for air purifier company and customized a whole responsive web design using SCSS and Bootstrap for Furniture 
