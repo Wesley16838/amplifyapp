@@ -2,8 +2,7 @@ import React, { Component } from "react";
 import ProfessionalPart from "./professional_part";
 import advantech from "./Assets/img/advantech2x.png";
 import creatop from "./Assets/img/creatop_lg@2x.png";
-import dct from "./Assets/img/dct2x.png";
-import ispts from "./Assets/img/ispts2x.png";
+import armoury from "./Assets/img/armoury.png";
 
 class Professional extends Component {
   constructor(props) {
@@ -15,8 +14,19 @@ class Professional extends Component {
   render() {
     return (
       <div className="professional">
-        <h1 data-aos="fade-in">Professional Project</h1>
+        <h1 data-aos="fade-in">Work Experience</h1>
         <div className="professional-section">
+          <ProfessionalPart
+            title="Armoury Crate"
+            position="Front-End Developer"
+            company="ASUS"
+            location="Taipei, Taiwan"
+            date="July 2020 - Present"
+            image={armoury}
+            url="https://rog.asus.com/us/innovation/armoury_crate/"
+            first="Optimized the performance of the application which owns millions of users by redesigning components’ architectures using React and Redux"
+            second="Worked closely with UI designer to enhance user experience by improving responsive interface using SCSS"
+          />
           <ProfessionalPart
             title="Water Treatment 
   Management Dashboard"
@@ -43,32 +53,6 @@ class Professional extends Component {
           company to increase brand and outreach."
             second=" Collaborated with UI designer and Back-End developer to coordinate visual 
           and database designs"
-          />
-          <ProfessionalPart
-            title="DCT"
-            company="Brilltek"
-            position="Full Stack Developer Intern"
-            location="Taichung, Taiwan"
-            date="May 2019 - Aug 2019"
-            image={dct}
-            url=""
-            first="Built a serverless Rest API with firebase cloud function,Express.js and Cloud 
-    Firestore for mobile app"
-            second="Cooperated with front-end team to create innovative mobile app interface and 
-    features using Flutter and Dart"
-          />
-
-          <ProfessionalPart
-            title="ISPTS 2019"
-            company="Stevens Institute of Technology"
-            position="Part-time Web Developer"
-            location="Hoboken, NJ"
-            date="Mar 2019 - June 2019"
-            image={ispts}
-            url="https://web.stevens.edu/ispts/index"
-            first="Redesign the web page and translate wireframe to actual code with HTML, CSS
-    ,Javascript and PHP"
-            second=""
           />
         </div>
       </div>
