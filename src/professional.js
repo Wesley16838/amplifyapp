@@ -23,7 +23,7 @@ class Professional extends Component {
             location="Taipei, Taiwan"
             date="July 2020 - Present"
             image={armoury}
-            url="https://rog.asus.com/us/innovation/armoury_crate/"
+            url="https://rog.asus.com/armoury-crate/"
             first="Optimized the performance of the application which owns millions of users by redesigning components’ architectures using React and Redux"
             second="Worked closely with UI designer to enhance user experience by improving responsive interface using SCSS"
           />
